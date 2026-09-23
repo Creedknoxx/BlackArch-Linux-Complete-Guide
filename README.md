@@ -251,28 +251,43 @@ sudo systemctl enable lightdm  # For Cinnamon
 . Customization (Themes & Backgrounds)
 
 Method 1: Temporary Change (using feh)----
+
 feh --bg-center /root/Downloads/photo_name.jpg
+
 # OR
+
 feh --bg-scale /root/Downloads/photo_name.jpg
 
 Method 2: Permanent Change (Editing Overlay)-
+
 cd /usr/share/blackarch
+
 ls
+
 cd config/fluxbox/
+
 nano overlay
+
 .Add these lines to overlay file:---
+
 ! The following line will prevent styles from setting the background
+
 Background: fullscreen
+
 Background: pixmap:/home/root/Downloads/photo_name.jpg
+
 OR
+
 Background: pixmap:/home/root/file or path name.jpg
 
 Save: Ctrl+O → Enter → Exit: Ctrl+X
 
 Shortcut Method:--
+
 cd ~/.fluxbox/
 
 . Disclaimer--------
+
 "Ethics Comes Before Hacking."
 This guide is strictly for educational purposes and authorized security testing. The authors and contributors are not responsible for any misuse of the information provided. Always obtain proper written permission before testing any system.
 nano overlay
