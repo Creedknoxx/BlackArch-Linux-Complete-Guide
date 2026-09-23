@@ -12,18 +12,18 @@
 
 ## 📑 Table of Contents
 - (1. Introduction to BlackArch.
-- 2. Kali vs Parrot OS vs BlackArch.
-- 3. Who Should Use BlackArch & Why.
-- 4. Download BlackArch ISO.
-- 5. VMware/VirtualBox Setup.
-- 6. Installation Process (Step-by-Step.
-- 7. Post-Installation Configuration.
-- 8. System Updates & Synchronization.
--  9. Tools & Repository Installation.
-- 10. Desktop Environment & GUI Setup.
-- 11. Customization (Themes & Backgrounds.
-- 12. Troubleshooting & Problem Solving.
-- 13. Disclaimer.
+- (2. Kali vs Parrot OS vs BlackArch.
+- (3. Who Should Use BlackArch & Why.
+- (4. Download BlackArch ISO.
+- (5. VMware/VirtualBox Setup.
+- (6. Installation Process (Step-by-Step.
+- (7. Post-Installation Configuration.
+- (8. System Updates & Synchronization.
+- (9. Tools & Repository Installation.
+- (10. Desktop Environment & GUI Setup.
+- (11. Customization (Themes & Backgrounds.
+- (12. Troubleshooting & Problem Solving.
+- (13. Disclaimer.
 
 ---
 
