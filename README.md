@@ -1,6 +1,14 @@
 <p align="center">
   <img src="banner.png" width="100%" alt="BlackArch Linux Complete Guide Banner">
 </p>
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-Active_Success-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Category](https://img.shields.io/badge/Category-Cybersecurity%20%7C%20Pentesting-red?style=for-the-badge)
+![Author](https://img.shields.io/badge/Author-Savage_Raw-purple?style=for-the-badge)
+
+</div>
 #  BlackArch Linux: Complete Installation & Troubleshooting Guide
 
 > **A comprehensive guide for BlackArch Linux installation, configuration, and problem-solving.**  
