@@ -142,15 +142,22 @@ systemctl enable dhcpcd
 systemctl start dhcpcd
 
 Initialize Pacman Keyring:---
+
 rm -rf /etc/pacman.d/gnupg
+
 pacman-key --init
+
 pacman-key --populate archlinux blackarch
+
 pacman -S archlinux-keyring blackarch-keyring
+
 pacman-key --update --keyserver keyserver.ubuntu.com
 
 If Key Installation Fails:---
 pacman-key --init
+
 pacman-key --refresh-keys
+
 pacman -Syyu archlinux-keyring blackarch-keyring
 
 . System Updates & Synchronization
