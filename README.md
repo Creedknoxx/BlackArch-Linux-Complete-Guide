@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="banner.png" width="100%" alt="BlackArch Linux Complete Guide Banner">
-</p>
+
 #  BlackArch Linux: Complete Installation & Troubleshooting Guide
 
 > **A comprehensive guide for BlackArch Linux installation, configuration, and problem-solving.**  
