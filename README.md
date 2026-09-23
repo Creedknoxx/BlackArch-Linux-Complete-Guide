@@ -82,14 +82,19 @@
 ### Step-by-Step VM Configuration:
 
 1. **Create New VM:** Select "I will install the operating system later"
+
 2. **Guest OS:** Linux → Arch Linux (64-bit)
+
 3. **VM Name:** As you wish
+
 4. **Disk Space:** 700GB (Maximum preferred)
    - ✅ Select **"Split virtual disk into multiple files"**
+
 5. **Customize Hardware:**
    - **RAM:** Up to 4GB (Host should have 8-16GB)
    - **Processors:** 2 Cores
    - **Hard Drive:** Minimum 400GB (1TB recommended)
+
 6. Click **Close** → **Finish**
 
 ---
@@ -97,25 +102,40 @@
 ## 6. Installation Process (Step-by-Step)
 
 ### Boot & Initial Setup:
+
 1. Power on VM and boot from ISO
+
 2. **Default Credentials:**
    - User: `root`
    - Password: `blackarch`
+
 3. **Set Desktop Theme:**
    - Right-click desktop → Fluxbox Menu → System Styles → Choose `Arch` (recommended)
+
 4. Open terminal and run:--    blackarch-install
    
    Interactive Installation Steps:
+
 Install Type: Type 2 (Full-ISO offline) → Enter
+
 Locale: Choose 1 → Enter
+
 Keymap: Choose 1 → Enter
+
 Hostname: Set your desired hostname
+
 Device: Choose sda (or your disk)
+
 Prompts: Type y for:
+
 BlackArch with Window/other OS
+
 Partitions
+
 Create zeroed Partition Table
+
 Partition Table Type: Choose dos
+
 Partitioning (Manual Setup):
 
 [table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx](https://github.com/user-attachments/files/32580078/table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx)
