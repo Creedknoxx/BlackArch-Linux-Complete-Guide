@@ -11,7 +11,7 @@
 ---
 
 ## 📑 Table of Contents
-- 1. Introduction to BlackArch.
+- (1. Introduction to BlackArch.
 - 2. Kali vs Parrot OS vs BlackArch.
 - 3. Who Should Use BlackArch & Why.
 - 4. Download BlackArch ISO.
