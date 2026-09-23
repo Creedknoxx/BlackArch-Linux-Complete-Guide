@@ -172,8 +172,11 @@ Type y → Installation starts automatically
 After completion: Type reboot.
 
 . Post-Installation Configuration
+
 Enable Internet Connection:----
+
 systemctl enable dhcpcd
+
 systemctl start dhcpcd
 
 Initialize Pacman Keyring:---
@@ -189,6 +192,7 @@ pacman -S archlinux-keyring blackarch-keyring
 pacman-key --update --keyserver keyserver.ubuntu.com
 
 If Key Installation Fails:---
+
 pacman-key --init
 
 pacman-key --refresh-keys
@@ -196,36 +200,52 @@ pacman-key --refresh-keys
 pacman -Syyu archlinux-keyring blackarch-keyring
 
 . System Updates & Synchronization
+
 Sync Database:----
+
 pacman -Syy
 
 Full System Update:---
+
 pacman -Syyu
 # OR
+
 pacman -Syu
 
 . Tools & Repository Installation
+
 Install BlackArch Tools:----
+
 pacman -S blackarch
+
 pacman -S blackman
 
 Install Window Manager & Git:---
+
 pacman -S thunar    # File manager
+
 pacman -S git       # Version control
 
 . Desktop Environment & GUI Setup
+
 Cinnamon Desktop:---
+
 pacman -S cinnamon
 
 GNOME Desktop:---
+
 pacman -S gnome
 
 Budgie Desktop:--
+
 sudo pacman -S budgie-desktop gnome-control-center
+
 sudo pacman -S adwaita-icon-theme arc-icon-theme adapta-gtk-theme arc-gtk-theme breeze-gtk
 
 💡 Pro Tip: After installing GUI, enable display manager:----
+
 sudo systemctl enable gdm      # For GNOME
+
 sudo systemctl enable lightdm  # For Cinnamon
 
 . Customization (Themes & Backgrounds)
