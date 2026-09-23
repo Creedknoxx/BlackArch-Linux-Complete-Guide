@@ -121,19 +121,34 @@ Partitioning (Manual Setup):
 [table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx](https://github.com/user-attachments/files/32580078/table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx)
 
 Steps:------
+
 Use arrow keys to navigate, Enter to select
+
 Create Boot partition (15G) → Mark as Bootable
+
 Create Swap partition (15G) → Type: Linux Swap
+
 Create Root partition (remaining space)
+
 Select [Write] → Type yes → Enter
+
 Select [Quit]
+
 Finalize Installation:
+
 Encryption: Type y (for safety)
+
 Confirm Partitions:
+
 /dev/sda1 - Boot
+
 /dev/sda2 - Swap
+
 /dev/sda3 - Root
+
+
 Type y → Installation starts automatically
+
 After completion: Type reboot.
 
 . Post-Installation Configuration
