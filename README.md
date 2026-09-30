@@ -148,7 +148,7 @@ Partition Table Type: Choose dos
 
 Partitioning (Manual Setup):
 
-![BlackArch Partitioning Table](partition-table.png)
+![BlackArch Partitioning Table](partition-table.png.png)
 
 Steps:------
 
