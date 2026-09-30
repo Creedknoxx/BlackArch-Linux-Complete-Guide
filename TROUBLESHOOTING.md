@@ -277,6 +277,5 @@ Add: keyserver hkp://keyserver.ubuntu.com
 Created by: Creed Knoxx
 
 Maintained for: Cybersecurity Community | Team Offenso | Cybersecurity Research & Security Team 🛡️ | Ethical Hacking • Penetration Testing •Vulnerability Assessment | Helping Organizations Understand & Improve Cybersecurity
-
 pacman -Syyu
 pacman -Syyu archlinux-keyring blackarch-keyring
