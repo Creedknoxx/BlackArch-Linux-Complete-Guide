@@ -148,7 +148,7 @@ Partition Table Type: Choose dos
 
 Partitioning (Manual Setup):
 
-[table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx](https://github.com/user-attachments/files/32580078/table-83ccf107-e131-40ff-9b1e-625846028df7.xlsx)
+![BlackArch Partitioning Table](partition-table.png)
 
 Steps:------
 
