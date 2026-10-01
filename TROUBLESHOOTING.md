@@ -32,19 +32,40 @@ pacman -Syyu archlinux-keyring blackarch-keyring
 
 Clear Cache & Orphaned Packages:---
 
+### Clear Package Cache — Optional
+
+Use cache cleanup only when disk space is low or corrupted cached packages are suspected.
+
+sudo pacman -Sc
+
 pacman -Scc
 
 pacman -R $(pacman -Qdtq)
+
+pacman -Qdt
+
+> Review the orphan package list before removing anything. Do not blindly remove packages on a production or important system.
 
 Ignore Specific Package:---
 
 sudo pacman -Syu --ignore <package-name>
 
+> Temporarily ignoring packages during a system upgrade can create dependency problems. Use this only when you understand why the package is being held back and complete the upgrade properly afterward.
+
 Force Install Package:---
+### File Conflict During Package Installation
+
+If pacman reports a specific file conflict, first identify which package owns the file and understand the conflict.
+
+Only use `--overwrite` when you understand the affected path and the package transaction.
+
+Example:
 
 sudo pacman -S --force <package-name>
 
 sudo pacman -S <package-name> --overwrite '*'
+
+sudo pacman -S --needed --overwrite='<specific-path>' <package-name>
 
 . PGP Signature Errors:---
 
@@ -73,6 +94,11 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 4. Manually Import Developer Key:--
+### Manual Key Import
+
+Only import a specific developer key when the exact key ID has been verified against current official BlackArch documentation or repository information.
+
+Do not blindly copy key IDs from old troubleshooting posts.
 
 sudo pacman-key --recv-keys 4345771566A46716
 
@@ -87,6 +113,8 @@ Find line: SigLevel = Required DatabaseOptional
 Change to: SigLevel = Never
 
 Save → Run: sudo pacman -Syyu
+
+⚠️ Do not disable package signature verification as a routine fix. Repair the keyring, repository configuration, mirror, system clock, or network problem instead. Package signature verification is an important security control.
 
 ⚠️ Important: Revert back to Required DatabaseOptional after update!
 
@@ -136,6 +164,8 @@ Solution:---
 
 sudo pacman -S blackarch-mirrorlist
 
+sudo pacman -Syu blackarch-mirrorlist
+
 2. Edit Mirror Configuration:--
 
 sudo nano /etc/pacman.d/blackarch-mirrorlist
@@ -147,6 +177,8 @@ Uncomment (remove #) from top mirrors closest to your location.
 sudo pacman -S pacman-contrib
 
 sudo rankmirrors -n 10 /etc/pacman.d/blackarch-mirrorlist | sudo tee /etc/pacman.d/mirrorlist
+
+> BlackArch and Arch Linux repositories use separate mirror configuration files. Do not replace one mirror list with the other unless you understand the repository configuration.
 
 4. Force Database Update & Reinstall:---
 
@@ -161,10 +193,19 @@ Error:---
 error: could not open file /var/lib/pacman/sync/core.db: Unrecognized archive format
 
 Solution:---
+### Corrupted Sync Database
+
+If a specific database file is reported as corrupted, first retry the synchronization:
 
 sudo rm -f /var/lib/pacman/sync/*.db
 
 sudo pacman -Syy
+
+sudo pacman -Syyu
+
+If corruption persists, back up the sync database directory before removing database files:
+
+sudo cp -a /var/lib/pacman/sync /var/lib/pacman/sync.backup
 
 6. Java JDK Conflicts:--
 
