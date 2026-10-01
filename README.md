@@ -50,7 +50,7 @@
 ### Key Features:
 - 🛠️ **2,800+ Security Tools** - Categorized for various cybersecurity tasks
 - ⚡ **Lightweight & Customizable** - Supports multiple desktop environments
-- 🔄 **Rolling Release Model** - Always up-to-date with latest tools
+- 🔄 **Rolling Release Model** - Continuously updated packages and tools
 - 📦 **Fast Package Management** - Uses `pacman` and `blackman`
 -  **Flexible Deployment** - Standalone, dual-boot, or live ISO
 
@@ -62,11 +62,12 @@
 | :--- | :--- | :--- | :--- |
 | **Base OS** | Debian | Debian | Arch Linux |
 | **Package Manager** | `apt` | `apt` | `pacman` |
-| **Number of Tools** | ~600 | ~900 | **2,800+** |
-| **Rolling Release** | No | Yes | **Yes** |
-| **Customization** | Medium | High | **Very High** |
+| Security Focus | Penetration testing, security auditing | Security, privacy, development | Penetration testing, security research |
+| Release Model | Rolling | Rolling | Rolling |
+| **Customization** | High | High | **Very High** |
 | **Target Audience** | Beginners | Privacy-focused | **Advanced Users** |
-
+| Security Tools | Large curated collection | Security-focused toolsets | 2,800+ tools in repository |
+> Tool counts and package availability change over time. Check each project's official documentation for current information.
 ---
 
 ## 3. Who Should Use BlackArch & Why
@@ -78,19 +79,22 @@
 - ✅ Anyone seeking a lightweight yet powerful pentesting OS
 
 ### Why Choose BlackArch:
-1. **Massive Tool Collection** - 2,800+ pre-installed tools
+1. **Massive Tool Collection** - 2,800+ security tools available through the BlackArch repository
 2. **Arch Linux Base** - Rolling release, bleeding-edge updates
 3. **Highly Customizable** - Install only what you need
-4. **Professional-Grade** - Built for real-world cybersecurity scenarios
+4. **Professional-Grade** -  Security-Focused - Provides a large collection of tools for penetration testing, security research, forensics, reverse engineering, and related workflows
 5. **Community-Driven** - Active security community support
 
 ---
 
 ## 4. Download BlackArch ISO
 
+- Full ISO — Complete BlackArch environment with the available tools at build time
+- Slim ISO — Lightweight environment with a selected set of tools
+- Netinstall ISO — Minimal installer that downloads required packages during installation
 - **Full ISO (Offline Installation):** [Download Here](https://blackarch.org/downloads.html#install-iso)
 - **Slim ISO (Online Installation):** [Download Here](https://blackarch.org/downloads.html#install-iso)
-
+- **Netinstall ISO (Online Installation):** [Download Here](https://blackarch.org/downloads.html#install-iso)
 ---
 
 ## 5. VMware/VirtualBox Setup
