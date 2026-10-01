@@ -11,7 +11,8 @@
 </div>
 #  BlackArch Linux: Complete Installation & Troubleshooting Guide
 
-> **A comprehensive guide for BlackArch Linux installation, configuration, and problem-solving.**  
+> **A comprehensive guide for BlackArch Linux installation, configuration, and problem-solving.**
+> > ⚠️ This is a community-created learning guide, not official BlackArch documentation. Always verify installation and system-maintenance procedures against the current BlackArch and Arch Linux documentation.
 > Created by **Creed Knoxx** 🛡️ CEH Certified | C)PTE (Penetration Testing Engineer)-In Progress  | Cybersecurity Researcher | Ethical Hacker | Pentester 
 | Founder Of The - Team Offenso | 
 📢 Telegram: https://t.me/team0ffenso_official
