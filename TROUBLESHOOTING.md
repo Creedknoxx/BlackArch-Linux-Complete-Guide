@@ -229,6 +229,27 @@ pacman -Rns mobsf tls-attacker jre-openjdk jdk-openjdk
 
 Solution:----
 
+Python applications can conflict when system packages and manually installed pip packages are mixed.
+### Check Python
+
+python --version
+
+## Check Uvicorn
+
+uvicorn --version
+
+Prefer the Arch package when available
+
+python -m venv .venv
+
+source .venv/bin/activate
+
+python -m pip install --upgrade pip
+
+python -m pip install uvicorn
+
+---------------------------------------------------------------------------------
+
 pacman -Syyu
 
 pip install uvicorn
@@ -249,7 +270,11 @@ pacman -S lib32-glibc
 
 pacman -S glibc
 
+### Finding Which Package Provides a File:--
+
 sudo pacman -Fy && pacman -Fs jsoncpp.so
+
+sudo pacman -Fy
 
 pacman -Fys jsoncpp.so
 
@@ -313,10 +338,33 @@ nano /etc/pacman.d/gnupg/gpg.conf
 
 Add: keyserver hkp://keyserver.ubuntu.com
 
+## 🧪 Tested Environment
+
+This guide was developed and tested primarily in a virtualized BlackArch Linux lab environment.
+
+> BlackArch is a rolling-release distribution, so commands, package names, repository contents, and installer behavior may change over time. Always verify commands against the current official BlackArch and Arch Linux documentation.
+
 ** Happy Learning with BlackArch Linux!**
 
-Created by: Creed Knoxx
+## 📚 Official References
 
-Maintained for: Cybersecurity Community | Team Offenso | Cybersecurity Research & Security Team 🛡️ | Ethical Hacking • Penetration Testing •Vulnerability Assessment | Helping Organizations Understand & Improve Cybersecurity
-pacman -Syyu
-pacman -Syyu archlinux-keyring blackarch-keyring
+- [BlackArch Official Website](https://blackarch.org/)
+- [BlackArch Installation Guide](https://blackarch.org/blackarch-install.html)
+- [BlackArch Downloads](https://blackarch.org/downloads.html)
+- [BlackArch Official GitHub](https://github.com/BlackArch/blackarch)
+- [Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide)
+- [ArchWiki - System Maintenance](https://wiki.archlinux.org/title/System_maintenance)
+- [ArchWiki - Pacman](https://wiki.archlinux.org/title/Pacman)
+- [ArchWiki - Python](https://wiki.archlinux.org/title/Python)
+
+## (Ethics Comes Before Hacking.)
+
+> This guide is independently maintained and is not affiliated with or endorsed by the BlackArch Linux project.
+
+**Created by:** Creed Knoxx  
+**Maintained by:** Team Offenso 🛡️
+
+**Cybersecurity Research & Security Team**  
+Ethical Hacking • Penetration Testing • Vulnerability Assessment  
+Helping Organizations Understand & Improve Cybersecurity
+> ⚠️ This is a community-created learning guide, not official BlackArch documentation. Always verify installation and system-maintenance procedures against the current BlackArch and Arch Linux documentation.
