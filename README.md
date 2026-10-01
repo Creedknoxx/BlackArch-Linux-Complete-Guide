@@ -167,6 +167,8 @@ Create Swap partition (4G) → Type: Linux Swap
 
 Create Root partition (remaining space)
 
+> **Note:** The partition-table type depends on the system's boot mode. `dos`/MBR is applicable to BIOS/legacy setups; UEFI systems normally use GPT with an EFI System Partition.
+
 Select [Write] → Type yes → Enter
 
 Select [Quit]
