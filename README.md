@@ -99,23 +99,19 @@
 
 ## 5. VMware/VirtualBox Setup
 
-### Step-by-Step VM Configuration:
+### The following is an example VM configuration for learning and lab use. 
+Actual requirements depend on the desktop environment, tools, workload, and host system.
 
-1. **Create New VM:** Select "I will install the operating system later"
+### Example Configuration
 
-2. **Guest OS:** Linux → Arch Linux (64-bit)
+- Guest OS: Linux / Arch Linux (64-bit)
+- CPU: 2–4 virtual CPUs
+- RAM: 4–8 GB
+- Storage: 40–80 GB or more depending on tools and snapshots
+- Network: NAT or Bridged, depending on your lab requirements
+- Enable hardware virtualization (Intel VT-x / AMD-V) in UEFI/BIOS if required
 
-3. **VM Name:** As you wish
-
-4. **Disk Space:** 700GB (Maximum preferred)
-   - ✅ Select **"Split virtual disk into multiple files"**
-
-5. **Customize Hardware:**
-   - **RAM:** Up to 4GB (Host should have 8-16GB)
-   - **Processors:** 2 Cores
-   - **Hard Drive:** Minimum 400GB (1TB recommended)
-
-6. Click **Close** → **Finish**
+> These are example lab settings, not official BlackArch minimum requirements.
 
 ---
 
@@ -128,6 +124,7 @@
 2. **Default Credentials:**
    - User: `root`
    - Password: `blackarch`
+ > ⚠️ These credentials are for the live installation environment. After installation, create and use a normal user account and set your own credentials.
 
 3. **Set Desktop Theme:**
    - Right-click desktop → Fluxbox Menu → System Styles → Choose `Arch` (recommended)
@@ -164,9 +161,9 @@ Steps:------
 
 Use arrow keys to navigate, Enter to select
 
-Create Boot partition (15G) → Mark as Bootable
+Create Boot partition (1G) → Mark as Bootable
 
-Create Swap partition (15G) → Type: Linux Swap
+Create Swap partition (4G) → Type: Linux Swap
 
 Create Root partition (remaining space)
 
@@ -177,6 +174,11 @@ Select [Quit]
 Finalize Installation:
 
 Encryption: Type y (for safety)
+### Disk Encryption
+
+BlackArch's installer can provide full-root encryption using LUKS.
+
+> Enable encryption if you understand the recovery and password requirements. Losing the encryption password/passphrase can make the encrypted data inaccessible.
 
 Confirm Partitions:
 
@@ -198,10 +200,20 @@ Enable Internet Connection:----
 systemctl enable dhcpcd
 
 systemctl start dhcpcd
+### Network Configuration
+
+Verify that the system has network connectivity:
+
+ip a
+
+ip route
+
+ping -c 3 archlinux.org
 
 Initialize Pacman Keyring:---
 
 rm -rf /etc/pacman.d/gnupg
+### Initialize Pacman Keyring
 
 pacman-key --init
 
@@ -210,6 +222,9 @@ pacman-key --populate archlinux blackarch
 pacman -S archlinux-keyring blackarch-keyring
 
 pacman-key --update --keyserver keyserver.ubuntu.com
+
+pacman -Syu archlinux-keyring blackarch-keyring
+> ⚠️ Do not delete `/etc/pacman.d/gnupg` as a routine troubleshooting step. Only rebuild the keyring directory when a specific documented recovery procedure requires it.
 
 If Key Installation Fails:---
 
@@ -239,6 +254,11 @@ Install BlackArch Tools:----
 pacman -S blackarch
 
 pacman -S blackman
+## Tools & Repository Installation
+
+### Install all BlackArch tools
+
+sudo pacman -S blackarch
 
 Install Window Manager & Git:---
 
