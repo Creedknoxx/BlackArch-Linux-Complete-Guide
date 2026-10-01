@@ -13,11 +13,12 @@
 
 > **A comprehensive guide for BlackArch Linux installation, configuration, and problem-solving.**
 > > ⚠️ This is a community-created learning guide, not official BlackArch documentation. Always verify installation and system-maintenance procedures against the current BlackArch and Arch Linux documentation.
-> Created by **Creed Knoxx** 🛡️ CEH Certified | C)PTE (Penetration Testing Engineer)-In Progress  | Cybersecurity Researcher | Ethical Hacker | Pentester 
-| Founder Of The - Team Offenso | 
-📢 Telegram: https://t.me/team0ffenso_official
-📘 Facebook: https://www.facebook.com/Teamoffenso
-📸 Instagram: https://www.instagram.com/teamoffenso/
+
+> > Created by **Creed Knoxx** 🛡️  
+> Cybersecurity Researcher | Ethical Hacker | Pentester | Founder, Team Offenso
+>📢 Telegram: https://t.me/team0ffenso_official
+>📘 Facebook: https://www.facebook.com/Teamoffenso
+>📸 Instagram: https://www.instagram.com/teamoffenso/
 
 ---
 
