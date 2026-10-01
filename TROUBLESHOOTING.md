@@ -4,6 +4,15 @@
 
 ---
 
+⚠️ Important Note
+
+This troubleshooting documentation is not official BlackArch Linux documentation. The problems and solutions documented here come from my personal research and real-world experience while installing, configuring, updating, and troubleshooting BlackArch Linux.
+
+The fixes listed here are solutions that I personally tested during my own setup. Results may vary depending on your system and configuration.
+
+Created & Maintained by Creed Knoxx 🛡️
+Founder, Team Offenso
+
 ##  Table of Contents
 - [1. Full System Update Fails](#1-full-system-update-fails)
 - [2. PGP Signature Errors](#2-pgp-signature-errors)
