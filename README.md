@@ -25,6 +25,19 @@
 
 ---
 
+⚠️ Important Disclaimer
+
+This is a community-created, independent guide and is not official BlackArch Linux documentation. It is not maintained, operated, or endorsed by the BlackArch project.
+
+The installation instructions, troubleshooting steps, commands, workarounds, and solutions documented here are based on my personal research, real-world installation experience, problems I personally encountered, and solutions I tested while installing, configuring, updating, and using BlackArch Linux.
+
+Some solutions may be specific to a particular system, configuration, or environment and may not work for every user. Always verify commands and procedures against the latest official BlackArch Linux and Arch Linux documentation before applying them.
+
+Created & Maintained by:
+Creed Knoxx 🛡️
+Founder, Team Offenso
+Cybersecurity Researcher | Ethical Hacker | Pentester
+
 ## 📑 Table of Contents
 
 1. [Introduction to BlackArch](#1-introduction-to-blackarch)
